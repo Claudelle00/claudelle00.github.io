@@ -1,0 +1,25 @@
+
+
+.box{
+
+display: flex;
+
+
+justify-content: space-between;
+}
+
+.TextBox{
+
+    background-color: rgba(255, 228, 196, 0.522);
+
+    margin: 20px;
+
+    padding:30px;
+
+    font-size: 25;
+
+    height: 400px;
+
+    text-align: center;
+
+}
