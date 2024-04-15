@@ -1,0 +1,48 @@
+body{
+
+    background-color: rgb(246, 242, 195);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 3%;
+    margin: 0%;
+}
+
+
+img{
+
+    max-width:30%;
+    border: 10%;
+    border-radius: 12px;
+}
+
+
+.contentContainer{
+    
+    
+  
+
+}
+
+@media screen and (min-width:922px)
+{
+    
+}
+
+@media screen and (max-width:1200px)
+{
+    body {background-color: rgb(162, 186, 242);}
+    p    {color: #0b0b0b;} 
+    img {max-width:100%}
+    p,h1,h3 {font-size: 150%;}
+}
+
+
+@media screen and (max-width:780px)
+{
+    body {background-color: black;}
+    p,h1,h3    {color: #fff;} 
+    
+    img {max-width:100%;}
+}
