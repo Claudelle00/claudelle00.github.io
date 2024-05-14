@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    box-sizing: border-box;
+}
+
+
+.back-ground{
+    
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(217, 176, 101, 0.288)), url('Pictures/IMG_0749.JPG');
+    background-position:center;
+    background-size: cover;
+    position: relative;
+  
+}
+
+.gallery-background{
+
+    min-height: 70vh;
+    width:100%;
+    background-image: linear-gradient(rgba(35, 35, 35, 0.48), rgba(241, 239, 234, 0.288)), url('Pictures/IMG_0811.JPG');
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+.contact-background{
+
+    min-height: 70vh;
+    width:100%;
+    background-image: linear-gradient(rgba(44, 45, 44, 0.48), rgba(241, 239, 234, 0.288)), url('Dfo-images/IMG_8303.JPG');
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+
+    margin:0;
+    display: flex;
+    padding: 20px 6% 20px 1%;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    position:relative;
+    width:97%;
+    z-index: 3;
+}
+
+nav img{
+
+    width :270px;
+   
+    border-radius: 100%;
+    
+
+}
+
+
+/*menu icon bar and x styling*/
+
+
+.menu,
+.close{
+
+ cursor:pointer;
+ display:none;
+ 
+
+}
+
+.bar{
+
+    width:25px;
+    height: 3px;
+    background-color:#122620;
+    margin:5px 0;
+    transition: transform 0.3s ease;
+}
+
+
+
+.close .bar:nth-child(1){
+
+    transform:rotate(45deg) translate(3px,3px);
+}
+
+.close .bar:nth-child(2){
+
+    transform:rotate(-45deg) translate(3px,-3px);
+}
+
+
+ 
+/*end of icon styling*/
+
+
+.nav-links-home{
+
+    flex:1;
+    text-align: right;
+    
+}
+
+.nav-links-home ul li {
+
+   list-style: none;
+   display: inline-block;
+   padding:8px 12px;
+   position: relative;
+}
+
+.nav-links-home ul li a {
+
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+
+    
+}
+
+.green {
+    text-decoration: underline;
+    text-decoration-color:#D6AD60 ;
+    text-decoration-thickness: 6px;
+    z-index: 2;
+   
+}
+
+.nav-links-home ul li a::after{
+
+    content:"";
+    width:0%;
+    height:5px;
+    background:#D6AD60;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links-home ul li a:hover::after{
+
+    width:100%;
+}
+
+.home-main{
+
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-30%); /*content to be in the center*/
+    text-align: center;
+    z-index: 2;
+}
+
+.home-main h1{
+
+    font-size: 60px;
+}
+
+.home-main {
+
+    font-size: 20px;
+    margin:10px 0 40px;
+    color:#fff;
+}
+
+
+.home-btn{
+
+    display: inline-block;
+    text-decoration: none;
+    color: #D6AD60;
+    border: 1px solid #D6AD60;
+    margin: 2%;
+    padding: 15px 35px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+
+.home-btn:hover{
+
+    background-color:#D6AD60;
+    color:#fff;
+}
+
+/*--------about us----------*/
+
+.about-us{
+
+    width: 100%;
+   
+    text-align: center;
+    padding-top: 100px;
+    background-color: #F4EBD0;
+    
+    
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.about-us p{
+    
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px;
+    
+
+}
+
+/*---------footer---------*/
+
+footer{
+
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    background-color: #122620;
+    color: #D6AD60;
+    height: 200px;
+   
+}
+.about-us h4{
+    margin: 10px;
+}
+.footer-icons a{
+    color: #D6AD60;
+    align-items: center;
+    margin: 5% 0 ;
+    padding: 10px;
+    font-size: 30px;
+}
+
+ 
+    /*----- contacting------ */
+
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        height: 150px;
+    }
+    
+    button {
+        background-color:#D6AD60 ;
+        color: #122620;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #060c0a;
+        color:#F4EBD0
+    }
+
+
+
+
+     /*----- gallery ------ */
+
+     .img-gallery {
+        margin-top:5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    }
+    
+    .img-box {
+        overflow: hidden; 
+    }
+    
+    .img-box img {
+        width: 100%; 
+        height: auto;
+    }
+
+
+
+
+@media (max-width:768px){
+
+    .menu{
+
+        display:block;
+        padding: 1%;
+       
+    }
+
+    .close{
+
+        display:none;
+        padding: 3%;
+        
+    }
+    .close.show{
+
+        display: block;
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        top:10px;
+        
+    }
+    .menu.show{
+
+        display:none;
+    }
+
+   
+
+    .bar{
+
+        width:25px;
+        height: 3px;
+        background-color: #D6AD60;
+        margin:5px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .close.show .bar:nth-child(1){
+
+        transform:rotate(45deg) translate(0px,10px);
+    }
+    
+    .close.show .bar:nth-child(2){
+
+        transform:rotate(-45deg) translate(0,-10px);
+    }
+    
+    .home-main h1{
+        font-size: 30px;
+    }
+
+    .nav-links-home ul li {
+        color:#D6AD60;
+        position: relative;
+        top: 35px;
+
+    }
+    .nav-links-home ul li {
+
+        display: block;
+      
+    }
+    .nav-links-home{
+
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #122620;
+        height: 100vh;
+        width:100%;
+        top:0;
+        /*right: 10px;*/
+        text-align: center;
+        z-index: 1;
+        padding:150px;
+        
+        
+       
+    }
+
+    .nav-links-home a{ 
+
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 10% 5%;
+        font-size: 200px;
+        
+    }
+    .nav-links-home.show {
+        display:block;
+    }
+
+    .about-us h1{
+        margin: 10px;
+    }
+}
